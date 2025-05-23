@@ -1,1 +1,1 @@
-# shopmanager-uz
+# shopmanager.uz site
