@@ -1,122 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopManager - Your Point of Sale Solution</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer" />
-	<!-- Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,900&display=swap" rel="stylesheet">
-
-
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;;
-        }
-    </style>
-	
-	<link rel="icon" type="image/x-icon" href="images/icon-shopmanager-dark.png">
-
-
+    <title>ShopManager - The POS to Grow Your Business</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="js/constants.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
-
 <body>
+    <div data-include="sections/header.html"></div>
 
-<header class="bg-dark text-light text-center py-2">
-    <h2>Welcome to</h2>
-    <h1>Shop Manager</h1>
-    <p>Your Point of Sale Solution</p>
-</header>
+    <div data-include="sections/hero.html"></div>
 
-<section id="about" class="container my-3">
-    <h2>О ShopManager</h2>
-    <p>ShopManager - это мощное и удобное программное обеспечение для точек продаж, разработанное для оптимизации ваших бизнес-процессов.</p>
-</section>
+    <!-- <div data-include="sections/trust.html"></div> -->
 
-<section id="features" class="container my-2">
-    <h2>Ключевая особенности</h2>
-    <ul>
-        <li>Easy-to-use interface</li>
-        <li>Inventory management</li>
-        <li>Sales analytics</li>
-    </ul>
-</section>
+    <div data-include="sections/features.html"></div>
 
-<section id="download" class="py-2">
-    <div class="container">
-        <p>Начните работу с ShopManager уже сегодня. <br/> Скачайте программное обеспечение ниже:</p>
-    </div>    
-    <div class="container">
-        
-        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-full-Setup-2.33.2025.exe">
-            <i class="fas fa-download mr-2"></i> 
-            ShopManager Full Setup 2.33.2025
-        </a>
-        <br/>
-        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-client-Setup-2.33.2025.exe" 
-            >
-            <i class="fas fa-download mr-2"></i> 
-            ShopManager Client Setup 2.33.2025
-        </a>
-        <br/>
-        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-update-2.33.2025.exe" 
-            >
-            <i class="fas fa-download mr-2"></i> 
-            ShopManager Update Setup 2.33.2025
-        </a>
-        <br/>
-        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/Cashier-Setup-2.33.2025.exe" 
-            >
-            <i class="fas fa-download mr-2"></i> 
-            Cashier Setup 2.33.2025
-        </a>
-        <br/>
-        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/Cashier-update-2.33.2025.exe" 
-            >
-            <i class="fas fa-download mr-2"></i> 
-            Cashier update 2.33.2025
-        </a>
-    </div>
-    <div class="container mt-4">
-        <p>Вспомогательные утилиты:</p>
-        <a href="https://drive.google.com/drive/folders/1pTjt1YFnCkYr8oTG-ZFaCZ4SU5dHP7mZ?usp=sharing" 
-           class="btn btn-primary" download>
-            <i class="fas fa-download mr-2"></i> Скачать Google Drive
-        </a>
-    </div>
-</section>
-<section id="pricing" class="container my-3">
-    <h2>Прайс</h2>
-    <p>Свяжитесь с нами для получения информации о ценах и индивидуальных решениях, соответствующих вашим бизнес-потребностям.</p>
-</section>
-<section id="contact" class="container my-2">
-    <h2>Связаться с нами</h2>
-    <p>Для вопросов и поддержки обращайтесь к нам: </p>
-    <p style="margin-bottom: 0; margin-top: 0"> <i class="fa-solid fa-phone"></i> <a href="tel:+998977401551"> <b>+998 97 7401551 </b> </a> </p>
-    <p style="margin-bottom: 0; margin-top: 0"> <i class="fa-solid fa-phone"></i> <a href="tel:+998337501551"> <b>+998 33 7501551 </b> </a> </p>
-    <p style="margin-bottom: 0; margin-top: 0"> <i class="fa-solid fa-phone"></i> <a href="tel:+998938701551"> <b>+998 93 8701551 </b> </a> </p>
-    <p style="margin-bottom: 0; margin-top: 0"> <i class="fa-brands fa-telegram"></i> <a href="https://t.me/ZafarjonOlimov">+998977401551</a></p>
-    <p style="margin-bottom: 0; margin-top: 0"> <i class="fa-solid fa-envelope"> </i> <a href="mailto:swdev77@gmail.com">swdev77@gmail.com</a></p>
-</section>
+    <!-- <div data-include="sections/testimonials.html"></div> -->
 
-<footer class="bg-dark text-light text-center py-3">
-    <p>&copy; 2025 ShopManager. All rights reserved.</p>
-</footer>
+    <div data-include="sections/download.html"></div>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Font Awesome JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- <div data-include="sections/contact.html"></div> -->
+    
+    <div data-include="sections/cta.html"></div>
+    
+    <div data-include="sections/footer.html"></div>
+
 </body>
-
 </html>
