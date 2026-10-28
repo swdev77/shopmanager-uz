@@ -1,0 +1,65 @@
+# ShopManager (shopmanager.uz)
+
+> ShopManager — O'zbekistondagi savdo nuqtalari (POS), chakana va ulgurji do'konlar, supermarketlar hamda omborxonalarni avtomatlashtirish uchun mo'ljallangan zamonaviy dasturiy ta'minot (POS va inventarizatsiya tizimi).
+
+## Asosiy ma'lumotlar (Overview)
+- **Mahsulot nomi:** ShopManager
+- **Rasmiy veb-sayt:** https://shopmanager.uz (o'zbekcha), https://shopmanager.uz/ru/ (на русском)
+- **Joriy talqin (Version):** 2.33.2025
+- **Dastur turi:** Windows Desktop ilova (internetsiz / offline va lokal tarmoqda barqaror ishlaydi)
+- **Operatsion tizim:** Windows 7, 8, 10, 11
+- **Ma'lumotlar bazasi:** Firebird SQL 5.0
+- **Hudud:** O'zbekiston (Toshkent va barcha viloyatlar)
+
+## Asosiy imkoniyatlar (Key Features)
+1. **Qulay sotuvlar va Kassa (POS):** Tezkor sotuv interfeysi (`Cashier` moduli), shtrix-kod skanerlari, chek printerlari va tarozilar bilan ishlash.
+2. **Inventarizatsiya va Ombor hisobi:** Real vaqt rejimida mahsulot qoldiqlarini kuzatish, kirim-chiqim, qaytarishlar, reviziya va yetkazib beruvchilarga buyurtmalar berish.
+3. **Real vaqtda tahlil va hisobotlar:** Kunlik/oylik savdo tushumlari, sof foyda, eng ko'p sotiladigan mahsulotlar va kassirlar faoliyati bo'yicha keng qamrovli analitika.
+4. **Mijozlarga sodiqlik (CRM):** Mijozlar bazasi, chegirma kartalari, bonus tizimi va nasiya/qarzdorlik hisobini yuritish.
+
+## Mos uskunalar (Supported Hardware)
+- **Kompyuter:** Windows 7, 8, 10, 11 — monoblok, noutbuk yoki oddiy kompyuter.
+- **Shtrix-kod skaneri:** tovarlarni kassaga tez qo'shish va omborda topish.
+- **Chek printeri:** har bir sotuvdan so'ng chekni avtomatik chop etish.
+- **Elektron tarozi:** vaznli tovarlarni (meva, go'sht, shirinliklar) tortib sotish.
+- **Pul qutisi:** naqd to'lovda avtomatik ochiladi.
+- **Lokal tarmoq:** bir nechta kassa va ishchi o'rinlarini internetsiz yagona bazaga ulash.
+
+## Qaysi paketni tanlash kerak (Which package to choose)
+- Asosiy kompyuter (server va ma'lumotlar bazasi) — **ShopManager Full Setup**.
+- Qo'shimcha ishchi kompyuterlar — **ShopManager Client Setup**.
+- Kassa terminali — **Cashier Setup**.
+- Dastur allaqachon o'rnatilgan bo'lsa — **ShopManager Update** / **Cashier Update**.
+
+## Yuklab olish paketlari (Download Links - v2.33.2025)
+- **ShopManager Full Setup (99 MB, Installer):** Ma'lumotlar bazasi va Firebird 5.0 server bilan to'liq o'rnatish paketi.
+  URL: https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-full-Setup-2.33.2025.exe
+- **ShopManager Client Setup (59 MB, Installer):** Tarmoq orqali asosiy serverga ulanuvchi ishchi kompyuterlar uchun (Firebird 5.0 client bilan).
+  URL: https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-client-Setup-2.33.2025.exe
+- **ShopManager Update (5 MB, Updater):** Mavjud ShopManager dasturini 2.33.2025 talqiniga yangilash paketi.
+  URL: https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-update-2.33.2025.exe
+- **Cashier Setup (48 MB, Installer):** Kassa (savdo nuqtasi / sotuvchi terminali) uchun maxsus o'rnatish paketi.
+  URL: https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/Cashier-Setup-2.33.2025.exe
+- **Cashier Update (6 MB, Updater):** Kassir dasturini 2.33.2025 talqiniga yangilash paketi.
+  URL: https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/Cashier-update-2.33.2025.exe
+
+## Tizim talablari (System Requirements)
+- **OS:** Windows 7, 8, 10, 11
+- **Protsessor:** Minimal Intel Core i3 yoki AMD ekvivalenti
+- **RAM (Tezkor xotira):** Minimal 4 GB (8 GB tavsiya etiladi)
+- **Doimiy xotira (Disk):** Kamida 300 MB bo'sh joy
+- **Tarmoq:** Barqaror internet yoki lokal tarmoq aloqasi
+
+## Ko'p beriladigan savollar (FAQ)
+- **ShopManager qanday dastur?** Savdo nuqtalari, do'konlar, supermarketlar va omborxonalarda sotuvlarni tezlashtirish, ombor qoldiqlarini real vaqtda nazorat qilish va mijozlar bilan ishlash (CRM) uchun Windows dasturi.
+- **Internetsiz ishlaydimi?** Ha. Ma'lumotlar lokal Firebird 5.0 bazasida saqlanadi; bir nechta kassani ulash uchun lokal tarmoq yetarli.
+- **O'rnatishda yordam berasizmi?** Ha — +998 97 740 1551 yoki Telegram (https://t.me/ZafarjonOlimov).
+
+## Кратко на русском (Russian summary)
+ShopManager — программа для автоматизации магазина, кассы (POS) и складского учёта в Узбекистане. Работает без интернета на Windows 7–11, база данных Firebird 5.0, несколько касс объединяются по локальной сети. Поддерживает сканеры штрих-кодов, чековые принтеры, электронные весы и денежные ящики. Есть учёт остатков, отчёты по продажам и прибыли, CRM с бонусами и учётом долгов (насия). Бесплатная загрузка для пробного использования: https://shopmanager.uz/ru/#download. Русская версия сайта: https://shopmanager.uz/ru/. Поддержка: +998 97 740 1551, Telegram https://t.me/ZafarjonOlimov.
+
+## Aloqa va Texnik yordam (Contact Information)
+- **Manzil:** Toshkent sh., Islom Karimov ko'chasi, 16A
+- **Telefonlar:** +998 97 740 1551, +998 33 750 1551
+- **Telegram:** https://t.me/ZafarjonOlimov
+- **Email:** swdev77@gmail.com

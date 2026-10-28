@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="720" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F4F8FF"/>
+      <stop offset="50%" stop-color="#E8F1FF"/>
+      <stop offset="100%" stop-color="#DCEBFE"/>
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000080"/>
+      <stop offset="100%" stop-color="#0052CC"/>
+    </linearGradient>
+    <linearGradient id="blueSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D4A373"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#001A4D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#001A4D" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Abstract Background Shapes -->
+  <rect width="720" height="480" rx="24" fill="url(#bgGrad)"/>
+  <circle cx="360" cy="240" r="195" fill="#FFFFFF" fill-opacity="0.55"/>
+  <circle cx="360" cy="240" r="145" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="360" cy="240" r="225" stroke="#DBEAFE" stroke-width="1.5"/>
+  <circle cx="640" cy="80" r="90" fill="#0052CC" fill-opacity="0.05"/>
+  <circle cx="80" cy="400" r="100" fill="#000080" fill-opacity="0.04"/>
+
+  <!-- Abstract Automation Connection Lines (Hub to Nodes) -->
+  <g stroke="#3B82F6" stroke-width="2.5" stroke-dasharray="6 5" opacity="0.65">
+    <path d="M360 220 L145 115"/>
+    <path d="M360 220 L575 115"/>
+    <path d="M360 250 L140 365"/>
+    <path d="M360 250 L580 365"/>
+  </g>
+
+  <!-- Data Flow Pulse Dots on Lines -->
+  <circle cx="235" cy="160" r="5" fill="#0052CC"/>
+  <circle cx="485" cy="160" r="5" fill="#10B981"/>
+  <circle cx="230" cy="315" r="5" fill="#D4A373"/>
+  <circle cx="490" cy="315" r="5" fill="#0052CC"/>
+
+  <!-- Rotating Automation Gear Ring Behind Center Hub -->
+  <g opacity="0.12" transform="translate(360, 230)">
+    <circle cx="0" cy="0" r="108" stroke="#000080" stroke-width="16" stroke-dasharray="18 14"/>
+  </g>
+
+  <!-- ================= CENTER HUB: DESKTOP POS & LOCAL DATABASE ================= -->
+  <g filter="url(#softShadow)">
+    <!-- Monitor Stand & Base -->
+    <path d="M330 315 L390 315 L402 348 L318 348 Z" fill="#CBD5E1"/>
+    <rect x="296" y="346" width="128" height="12" rx="6" fill="#94A3B8"/>
+
+    <!-- Desktop Monitor Outer Frame -->
+    <rect x="220" y="126" width="280" height="196" rx="16" fill="url(#navyGrad)"/>
+    <rect x="230" y="136" width="260" height="164" rx="10" fill="url(#screenGlow)"/>
+
+    <!-- Monitor Chin Power Indicator -->
+    <circle cx="360" cy="311" r="3.5" fill="#34D399"/>
+
+    <!-- Abstract Desktop App Interface Inside Screen -->
+    <!-- Top App Toolbar -->
+    <rect x="230" y="136" width="260" height="24" rx="8" fill="#000080"/>
+    <rect x="230" y="150" width="260" height="10" fill="#000080"/>
+    <circle cx="244" cy="148" r="3.5" fill="#60A5FA"/>
+    <circle cx="255" cy="148" r="3.5" fill="#93C5FD"/>
+    <rect x="270" y="145" width="56" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.7"/>
+    <rect x="448" y="143" width="30" height="10" rx="5" fill="#10B981"/>
+
+    <!-- Left Abstract Sidebar -->
+    <rect x="238" y="168" width="44" height="122" rx="6" fill="#E2E8F0" fill-opacity="0.7"/>
+    <rect x="245" y="176" width="30" height="8" rx="4" fill="#0052CC"/>
+    <rect x="245" y="192" width="30" height="6" rx="3" fill="#94A3B8"/>
+    <rect x="245" y="206" width="30" height="6" rx="3" fill="#94A3B8"/>
+    <rect x="245" y="220" width="30" height="6" rx="3" fill="#94A3B8"/>
+    <rect x="245" y="234" width="30" height="6" rx="3" fill="#94A3B8"/>
+
+    <!-- Abstract POS Grid / Product Tiles -->
+    <rect x="290" y="168" width="56" height="36" rx="6" fill="#DBEAFE"/>
+    <rect x="298" y="176" width="26" height="6" rx="3" fill="#0052CC"/>
+    <rect x="298" y="188" width="36" height="8" rx="4" fill="#1E40AF"/>
+
+    <rect x="354" y="168" width="56" height="36" rx="6" fill="#D1FAE5"/>
+    <rect x="362" y="176" width="26" height="6" rx="3" fill="#059669"/>
+    <rect x="362" y="188" width="36" height="8" rx="4" fill="#065F46"/>
+
+    <rect x="418" y="168" width="62" height="122" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <!-- Abstract Receipt Lines on Right Panel -->
+    <rect x="426" y="178" width="46" height="6" rx="3" fill="#000080"/>
+    <rect x="426" y="192" width="32" height="5" rx="2.5" fill="#94A3B8"/>
+    <rect x="426" y="203" width="40" height="5" rx="2.5" fill="#94A3B8"/>
+    <rect x="426" y="214" width="36" height="5" rx="2.5" fill="#94A3B8"/>
+    <line x1="426" y1="228" x2="472" y2="228" stroke="#CBD5E1" stroke-dasharray="3 2"/>
+    <!-- Abstract Mini Barcode -->
+    <g fill="#334155">
+      <rect x="428" y="236" width="2" height="14"/>
+      <rect x="433" y="236" width="4" height="14"/>
+      <rect x="440" y="236" width="2" height="14"/>
+      <rect x="445" y="236" width="3" height="14"/>
+      <rect x="451" y="236" width="5" height="14"/>
+      <rect x="459" y="236" width="2" height="14"/>
+      <rect x="464" y="236" width="4" height="14"/>
+    </g>
+    <rect x="426" y="260" width="46" height="20" rx="5" fill="url(#greenGrad)"/>
+    <path d="M444 270 L448 274 L456 266" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Abstract Rising Chart in Center Screen -->
+    <rect x="290" y="212" width="120" height="78" rx="6" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="302" y="256" width="12" height="24" rx="3" fill="#93C5FD"/>
+    <rect x="322" y="244" width="12" height="36" rx="3" fill="#60A5FA"/>
+    <rect x="342" y="250" width="12" height="30" rx="3" fill="#93C5FD"/>
+    <rect x="362" y="232" width="12" height="48" rx="3" fill="#2563EB"/>
+    <rect x="382" y="222" width="12" height="58" rx="3" fill="#000080"/>
+    <path d="M308 250 L328 238 L348 244 L368 226 L388 216" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Local Database Cylinder Badge (Bottom Center — Offline/Local DB Symbol) -->
+  <g filter="url(#nodeShadow)" transform="translate(322, 368)">
+    <rect x="0" y="0" width="76" height="76" rx="20" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="2"/>
+    <!-- 3-Tier Database Cylinder Icon -->
+    <ellipse cx="38" cy="24" rx="18" ry="6" fill="url(#navyGrad)"/>
+    <path d="M20 24 V36 C20 39.3 28 42 38 42 C48 42 56 39.3 56 36 V24" fill="#0052CC"/>
+    <ellipse cx="38" cy="36" rx="18" ry="6" fill="#60A5FA" fill-opacity="0.35"/>
+    <path d="M20 38 V50 C20 53.3 28 56 38 56 C48 56 56 53.3 56 50 V38" fill="#000080"/>
+    <circle cx="56" cy="52" r="9" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M52.5 52 L55 54.5 L60 49.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= NODE 1 (TOP LEFT): RETAIL STORE / SAVDO NUQTASI ================= -->
+  <g filter="url(#nodeShadow)" transform="translate(76, 56)">
+    <rect x="0" y="0" width="116" height="106" rx="22" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="2"/>
+    <!-- Storefront Awning & Building -->
+    <rect x="28" y="42" width="60" height="40" rx="4" fill="#EFF6FF" stroke="#0052CC" stroke-width="2"/>
+    <path d="M22 42 L30 24 H86 L94 42 Z" fill="url(#navyGrad)"/>
+    <!-- Awning Scallops -->
+    <path d="M24 42 C24 47 36 47 36 42 C36 47 48 47 48 42 C48 47 60 47 60 42 C60 47 72 47 72 42 C72 47 84 47 84 42 C84 47 92 47 92 42" fill="#0052CC"/>
+    <!-- Store Door & Window -->
+    <rect x="38" y="54" width="16" height="28" rx="2" fill="#0052CC"/>
+    <rect x="60" y="54" width="18" height="16" rx="2" fill="#93C5FD"/>
+  </g>
+
+  <!-- ================= NODE 2 (TOP RIGHT): BARCODE SCANNER & CHECKOUT ================= -->
+  <g filter="url(#nodeShadow)" transform="translate(528, 56)">
+    <rect x="0" y="0" width="116" height="106" rx="22" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="2"/>
+    <!-- Corner Scanner Frame Brackets -->
+    <path d="M26 34 V24 H36" stroke="#0052CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 34 V24 H80" stroke="#0052CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26 72 V82 H36" stroke="#0052CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 72 V82 H80" stroke="#0052CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Barcode Bars -->
+    <g fill="#000080">
+      <rect x="36" y="34" width="4" height="38" rx="1"/>
+      <rect x="44" y="34" width="2" height="38" rx="1"/>
+      <rect x="50" y="34" width="6" height="38" rx="1"/>
+      <rect x="60" y="34" width="3" height="38" rx="1"/>
+      <rect x="67" y="34" width="5" height="38" rx="1"/>
+      <rect x="76" y="34" width="4" height="38" rx="1"/>
+    </g>
+    <!-- Red Laser Scan Line -->
+    <line x1="20" y1="53" x2="96" y2="53" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= NODE 3 (BOTTOM LEFT): WAREHOUSE & INVENTORY BOXES ================= -->
+  <g filter="url(#nodeShadow)" transform="translate(76, 314)">
+    <rect x="0" y="0" width="116" height="106" rx="22" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="2"/>
+    <!-- Isometric Stacked Inventory Boxes -->
+    <!-- Bottom Left Box -->
+    <rect x="26" y="54" width="30" height="28" rx="4" fill="url(#goldGrad)"/>
+    <rect x="37" y="54" width="8" height="10" fill="#FEF3C7"/>
+    <!-- Bottom Right Box -->
+    <rect x="60" y="54" width="30" height="28" rx="4" fill="url(#goldGrad)"/>
+    <rect x="71" y="54" width="8" height="10" fill="#FEF3C7"/>
+    <!-- Top Center Box -->
+    <rect x="43" y="22" width="30" height="28" rx="4" fill="url(#navyGrad)"/>
+    <rect x="54" y="22" width="8" height="10" fill="#93C5FD"/>
+    <!-- Checkmark Badge -->
+    <circle cx="88" cy="28" r="10" fill="#10B981"/>
+    <path d="M84 28 L87 31 L93 25" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= NODE 4 (BOTTOM RIGHT): ANALYTICS & AUTOMATION GEAR ================= -->
+  <g filter="url(#nodeShadow)" transform="translate(528, 314)">
+    <rect x="0" y="0" width="116" height="106" rx="22" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="2"/>
+    <!-- Rising Bars -->
+    <rect x="28" y="58" width="12" height="24" rx="3" fill="#93C5FD"/>
+    <rect x="46" y="44" width="12" height="38" rx="3" fill="#3B82F6"/>
+    <rect x="64" y="30" width="12" height="52" rx="3" fill="#000080"/>
+    <!-- Rising Arrow -->
+    <path d="M28 46 L48 32 L68 18" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60 17 H69 V26" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Mini Automation Cog/Gear -->
+    <circle cx="86" cy="66" r="11" fill="url(#goldGrad)"/>
+    <circle cx="86" cy="66" r="4.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Decorative Floating Geometric Particles -->
+  <circle cx="360" cy="70" r="6" fill="#60A5FA" fill-opacity="0.5"/>
+  <circle cx="110" cy="235" r="7" fill="#D4A373" fill-opacity="0.6"/>
+  <circle cx="610" cy="235" r="7" fill="#10B981" fill-opacity="0.5"/>
+  <rect x="235" y="75" width="10" height="10" rx="3" transform="rotate(20 235 75)" fill="#0052CC" fill-opacity="0.25"/>
+  <rect x="475" y="395" width="12" height="12" rx="3" transform="rotate(-15 475 395)" fill="#000080" fill-opacity="0.2"/>
+</svg>

@@ -1,33 +1,25 @@
-<!-- Hero Section -->
+<!-- Hero Section (DESIGN.md: Stark white canvas, 64px hero-display, 28px/300 subhead, dual-CTA, 32px photo frame) -->
 <section class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <h1>ShopManager: Biznesingiz POS tizimlarini rivojlantirish uchun qulay echim</h1>
-            <p>Bizning foydalanuvchi uchun qulay va oson platformamiz bo'lgan 
-                ShopManager yordamida 
-                savdoni soddalashtiring, 
-                inventarizatsiyani boshqaring va mijozlaringizni quvontiring.</p>
-            <div class="hero-actions">
-                <a href="#download" class="btn btn-primary btn-lg">Hoziroq sinab ko'ring</a>
-                <button 
-                    onclick="location.href='#features'" 
-                    type="button"
-                    class="btn btn-secondary btn-lg">Batafsil ma'lumot</button>
+    <div class="container hero__grid">
+        <div class="hero__content">
+            <span class="badge-promo">Yangi talqin • v2.33.2025</span>
+            <h1 class="hero__title">ShopManager — POS tizimingiz uchun qulay yechim</h1>
+            <p class="hero__subhead">Do'koningiz uchun ishonchli avtomatlashtirish.</p>
+            <p class="hero__lead">ShopManager — internetga bog'liq bo'lmagan Windows dasturi. Savdoni tezlashtiring, ombor qoldiqlarini real vaqtda nazorat qiling va mijozlaringizni bonuslar bilan quvontiring.</p>
+            <div class="hero__actions">
+                <a href="#download" class="btn btn-accent">Bepul sinab ko'rish</a>
+                <a href="#features" class="btn btn-secondary">Batafsil ma'lumot</a>
             </div>
+            <ul class="hero__checks">
+                <li><i class="fas fa-circle-check"></i> Internetsiz ishlaydi</li>
+                <li><i class="fas fa-circle-check"></i> Windows 7 – 11</li>
+                <li><i class="fas fa-circle-check"></i> Lokal tarmoqda ko'p kassa</li>
+            </ul>
         </div>
-        <div class="hero-image">
-            <div class="image-placeholder">          
-                <img alt="A modern point of sale system being used at a store counter." 
 
-                    src="https://img.freepik.com/free-photo/high-angle-view-cropped-employee-work-with-laptop_1098-20470.jpg" 
-                    class="w-full aspect-video object-cover rounded-xl">
-                <!-- <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="320" fill="#f0f0f0" rx="12"/>
-                    <rect x="80" y="40" width="240" height="200" fill="#e8e8e8" rx="8"/>
-                    <rect x="160" y="220" width="80" height="80" fill="#d4a373" rx="4"/>
-                    <rect x="170" y="225" width="60" height="70" fill="#e8e8e8" rx="2"/>
-                    <circle cx="200" cy="180" r="20" fill="#ccc"/>
-                </svg> -->
+        <div class="hero__visual">
+            <div class="hero__frame">
+                <img src="images/hero-supermarket-pos.webp" srcset="images/hero-supermarket-pos-640.webp 640w, images/hero-supermarket-pos.webp 1024w" sizes="(max-width: 600px) 92vw, 540px" alt="Do'kon, kassa va ombor hisobini avtomatlashtirish tizimi" width="1024" height="1024" fetchpriority="high">
             </div>
         </div>
     </div>

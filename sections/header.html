@@ -1,32 +1,30 @@
-<!-- Navigation Header -->
-<header class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo">
-            <a href="#footer">
-                <img src="images/logo.png" alt="ShopManager" 
-                    style="height: 64px; width: auto; padding-right: 40px;">
-            </a>
-        </div>
-        <nav class="nav-menu">
-            <h1>ShopManager</h1>
-        </nav>
-            
-        <nav class="nav-menu">
-            <a href="#features">Afzalliklar</a>
-            <!-- <a href="#pricing">Pricing</a> -->
-            <!-- <a href="#customers">Customers</a> -->
-            <a href="#download">Yuklab oling</a>
-            <a href="#footer">Biz bilan bog'laning</a>
-            <br/>
-        </nav>
+<!-- Navigation Header (DESIGN.md: Top Navigation Desktop ~64px, pill-tab nav, black primary CTA) -->
+<header class="navbar" id="navbar">
+    <div class="container nav-container">
+        <a href="#" class="nav-brand" aria-label="ShopManager — bosh sahifa">
+            <img src="images/logo.png" alt="ShopManager" class="nav-brand__logo" width="144" height="120">
+            <span class="nav-brand__title">ShopManager</span>
+        </a>
 
+        <nav class="nav-menu" id="navMenu" aria-label="Asosiy menyu">
+            <a href="#features">Imkoniyatlari</a>
+            <a href="#hardware">Uskunalar</a>
+            <a href="#download">Yuklab olish</a>
+            <a href="#faq">FAQ</a>
+            <a href="#footer">Aloqa</a>
+        </nav>
 
         <div class="nav-actions">
-            <!-- <select class="language-select">
-                <option>English</option>
-            </select> -->
-            <a href="#download" class="btn btn-primary">Sinab ko'ring</a>
-            <p class="phone-number">+998 97 740 1551 </p>
+            <a href="ru/" class="lang-switch" hreflang="ru" lang="ru" title="Русская версия">RU</a>
+            <a href="tel:+998977401551" class="nav-phone">
+                <i class="fas fa-phone"></i> +998 97 740 1551
+            </a>
+            <a href="#download" class="btn btn-accent">
+                Yuklab olish
+            </a>
+            <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="navMenu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </div>
 </header>

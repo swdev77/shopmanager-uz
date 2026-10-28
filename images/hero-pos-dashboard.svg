@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="720" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EEF5FF"/>
+      <stop offset="100%" stop-color="#DCEBFE"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000080"/>
+      <stop offset="100%" stop-color="#0052CC"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0052CC" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#0052CC" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#001A4D" flood-opacity="0.12"/>
+    </filter>
+    <filter id="floatShadow" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#001A4D" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="720" height="480" rx="20" fill="url(#bgGrad)"/>
+  <circle cx="650" cy="70" r="110" fill="#0052CC" fill-opacity="0.06"/>
+  <circle cx="80" cy="420" r="95" fill="#000080" fill-opacity="0.05"/>
+
+  <!-- Main POS Dashboard Window -->
+  <g filter="url(#cardShadow)">
+    <rect x="34" y="32" width="540" height="380" rx="14" fill="#FFFFFF" stroke="#D8E6F8" stroke-width="1.5"/>
+
+    <!-- Window Top Header Bar -->
+    <path d="M34 46C34 38.268 40.268 32 48 32H560C567.732 32 574 38.268 574 46V74H34V46Z" fill="url(#primaryGrad)"/>
+    <circle cx="56" cy="53" r="5.5" fill="#FF5F56"/>
+    <circle cx="74" cy="53" r="5.5" fill="#FFBD2E"/>
+    <circle cx="92" cy="53" r="5.5" fill="#27C93F"/>
+    <text x="116" y="58" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">ShopManager POS &amp; Ombor — v2.33.2025</text>
+
+    <!-- Status Pill in Header -->
+    <rect x="468" y="42" width="90" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.16"/>
+    <circle cx="481" cy="53" r="4" fill="#34D399"/>
+    <text x="491" y="57" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">Onlayn Baza</text>
+
+    <!-- Left Navigation Sidebar -->
+    <rect x="34" y="74" width="110" height="338" fill="#F8FAFC"/>
+    <line x1="144" y1="74" x2="144" y2="412" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Sidebar Active Item: Kassa / Sotuv -->
+    <rect x="44" y="90" width="90" height="34" rx="7" fill="#E3F2FD"/>
+    <rect x="44" y="90" width="4" height="34" rx="2" fill="#000080"/>
+    <text x="58" y="111" fill="#000080" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Kassa POS</text>
+
+    <!-- Sidebar Other Items -->
+    <text x="58" y="148" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Omborxona</text>
+    <text x="58" y="182" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Hisobotlar</text>
+    <text x="58" y="216" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Mijozlar CRM</text>
+    <text x="58" y="250" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Kirim / Chiqim</text>
+
+    <!-- Sidebar DB Indicator -->
+    <rect x="44" y="356" width="90" height="42" rx="8" fill="#EEF5FF" stroke="#CFE2FF"/>
+    <text x="52" y="373" fill="#000080" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700">Firebird 5.0</text>
+    <text x="52" y="388" fill="#059669" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">● Faol server</text>
+
+    <!-- KPI Cards Row -->
+    <!-- Card 1: Kunlik Savdo -->
+    <rect x="160" y="90" width="132" height="74" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="172" y="110" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">BUGUNGI SAVDO</text>
+    <text x="172" y="133" fill="#000080" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">18.4 mln</text>
+    <rect x="172" y="142" width="54" height="15" rx="4" fill="#D1FAE5"/>
+    <text x="178" y="153" fill="#059669" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700">+22.5%</text>
+
+    <!-- Card 2: Ombor qoldig'i -->
+    <rect x="304" y="90" width="124" height="74" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="316" y="110" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">OMBOR QOLDIG'I</text>
+    <text x="316" y="133" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">4,280 ta</text>
+    <text x="316" y="152" fill="#0052CC" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">Real vaqt rejimida</text>
+
+    <!-- Card 3: Mijozlar / Cheklar -->
+    <rect x="440" y="90" width="118" height="74" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="452" y="110" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">CHEKLAR SONI</text>
+    <text x="452" y="133" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">164 ta</text>
+    <text x="452" y="152" fill="#D97706" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">★ 98% sodiqlik</text>
+
+    <!-- Sales Analytics Chart Box -->
+    <rect x="160" y="178" width="398" height="134" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="176" y="200" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Savdo va daromad tahlili</text>
+    <text x="470" y="200" fill="#0052CC" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">Haftalik hisobot</text>
+
+    <!-- Grid Lines -->
+    <line x1="176" y1="222" x2="540" y2="222" stroke="#F1F5F9" stroke-width="1"/>
+    <line x1="176" y1="252" x2="540" y2="252" stroke="#F1F5F9" stroke-width="1"/>
+    <line x1="176" y1="282" x2="540" y2="282" stroke="#F1F5F9" stroke-width="1"/>
+
+    <!-- Bar + Line Chart -->
+    <rect x="192" y="256" width="22" height="36" rx="4" fill="#CFE2FF"/>
+    <rect x="242" y="242" width="22" height="50" rx="4" fill="#9EC5FE"/>
+    <rect x="292" y="248" width="22" height="44" rx="4" fill="#CFE2FF"/>
+    <rect x="342" y="226" width="22" height="66" rx="4" fill="#6EA8FE"/>
+    <rect x="392" y="216" width="22" height="76" rx="4" fill="#3D8BFD"/>
+    <rect x="442" y="208" width="22" height="84" rx="4" fill="#0052CC"/>
+    <rect x="492" y="198" width="22" height="94" rx="4" fill="#000080"/>
+
+    <!-- Smooth Trend Line -->
+    <path d="M203 250 L253 236 L303 242 L353 220 L403 210 L453 202 L503 192" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="503" cy="192" r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Bottom Inventory Table Preview -->
+    <rect x="160" y="324" width="398" height="74" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="176" y="344" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">So'nggi sotilgan mahsulotlar (Kassa #1)</text>
+    <text x="176" y="366" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="11">1. Coca-Cola 1.5L (Shtrix: 47800124) — 2 dona</text>
+    <text x="478" y="366" fill="#000080" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">24,000 so'm</text>
+    <text x="176" y="385" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="11">2. Shakar 1 kg (Ombor: 340 kg) — 5 kg</text>
+    <text x="478" y="385" fill="#000080" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">65,000 so'm</text>
+  </g>
+
+  <!-- Floating POS Cashier Receipt & Barcode Card (Right Side) -->
+  <g filter="url(#floatShadow)">
+    <rect x="478" y="138" width="212" height="308" rx="14" fill="#FFFFFF" stroke="#CFE2FF" stroke-width="2"/>
+
+    <!-- Card Header -->
+    <rect x="478" y="138" width="212" height="46" rx="14" fill="#000080"/>
+    <rect x="478" y="168" width="212" height="16" fill="#000080"/>
+    <text x="498" y="166" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Cashier Terminal</text>
+    <rect x="622" y="150" width="52" height="22" rx="6" fill="#10B981"/>
+    <text x="631" y="165" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">POS #1</text>
+
+    <!-- Receipt Items -->
+    <text x="498" y="206" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">CHEK #00482</text>
+    <line x1="498" y1="214" x2="670" y2="214" stroke="#E2E8F0" stroke-dasharray="4 3"/>
+
+    <text x="498" y="234" fill="#1E293B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Sut Musaffo 1L × 2</text>
+    <text x="618" y="234" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">26,000</text>
+
+    <text x="498" y="256" fill="#1E293B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Qahva Jacobs × 1</text>
+    <text x="618" y="256" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">68,000</text>
+
+    <text x="498" y="278" fill="#1E293B" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">Shokolad Nest × 3</text>
+    <text x="618" y="278" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">45,000</text>
+
+    <text x="498" y="298" fill="#059669" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">Mijoz bonusi (5%):</text>
+    <text x="618" y="298" fill="#059669" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">-6,950</text>
+
+    <line x1="498" y1="310" x2="670" y2="310" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Total Amount Box -->
+    <rect x="494" y="320" width="180" height="40" rx="8" fill="#EEF5FF"/>
+    <text x="506" y="345" fill="#000080" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">JAMI:</text>
+    <text x="562" y="345" fill="#000080" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800">132,050 so'm</text>
+
+    <!-- Barcode Graphic -->
+    <g fill="#1E293B">
+      <rect x="506" y="372" width="3" height="28"/>
+      <rect x="513" y="372" width="1.5" height="28"/>
+      <rect x="518" y="372" width="4" height="28"/>
+      <rect x="526" y="372" width="2" height="28"/>
+      <rect x="531" y="372" width="1.5" height="28"/>
+      <rect x="536" y="372" width="5" height="28"/>
+      <rect x="545" y="372" width="2" height="28"/>
+      <rect x="550" y="372" width="3.5" height="28"/>
+      <rect x="557" y="372" width="1.5" height="28"/>
+      <rect x="562" y="372" width="4" height="28"/>
+      <rect x="570" y="372" width="2" height="28"/>
+      <rect x="575" y="372" width="4.5" height="28"/>
+      <rect x="583" y="372" width="1.5" height="28"/>
+      <rect x="588" y="372" width="3" height="28"/>
+      <rect x="595" y="372" width="2" height="28"/>
+      <rect x="601" y="372" width="5" height="28"/>
+      <rect x="610" y="372" width="1.5" height="28"/>
+      <rect x="615" y="372" width="3.5" height="28"/>
+      <rect x="622" y="372" width="2" height="28"/>
+      <rect x="628" y="372" width="4" height="28"/>
+      <rect x="636" y="372" width="1.5" height="28"/>
+      <rect x="641" y="372" width="3" height="28"/>
+      <rect x="648" y="372" width="4.5" height="28"/>
+      <rect x="656" y="372" width="2" height="28"/>
+      <rect x="661" y="372" width="3" height="28"/>
+    </g>
+    <!-- Laser Scan Line across Barcode -->
+    <line x1="496" y1="386" x2="672" y2="386" stroke="#EF4444" stroke-width="2" stroke-opacity="0.85"/>
+
+    <!-- Payment Success Button -->
+    <rect x="494" y="410" width="180" height="24" rx="6" fill="url(#greenGrad)"/>
+    <text x="536" y="426" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">✓ To'lov qabul qilindi</text>
+  </g>
+</svg>

@@ -3,30 +3,924 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopManager - POS tizimlarini rivojlantirish uchun qulay echim</title>
+    <title>ShopManager — do'kon, kassa (POS) va ombor hisobi dasturi | Windows</title>
+    <meta name="description" content="ShopManager — do'kon, kassa (POS) va ombor hisobini avtomatlashtirish uchun internetsiz ishlaydigan Windows dasturi. Savdo, inventarizatsiya, hisobotlar va CRM bitta dasturda. Bepul yuklab oling!">
+    <meta name="keywords" content="ShopManager, POS tizimi, do'kon dasturi, savdo dasturi, kassa dasturi, ombor dasturi, inventarizatsiya dasturi, savdo nuqtasini avtomatlashtirish, magazin programma, kassa apparat dasturi, oflayn kassa dasturi, CRM, chakana savdo, Toshkent, O'zbekiston, программа для магазина, автоматизация торговли Ташкент, POS система Узбекистан, складской учет">
+    <meta name="author" content="ShopManager">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#0c4e8c">
+    <link rel="canonical" href="https://shopmanager.uz/">
+    <link rel="alternate" hreflang="uz" href="https://shopmanager.uz/">
+    <link rel="alternate" hreflang="ru" href="https://shopmanager.uz/ru/">
+    <link rel="alternate" hreflang="x-default" href="https://shopmanager.uz/">
+    <link rel="alternate" type="text/plain" href="https://shopmanager.uz/llms.txt" title="LLM Context for AI Agents">
+
+    <!-- Open Graph / Facebook / Telegram -->
+    <meta property="og:locale" content="uz_UZ">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:site_name" content="ShopManager.uz">
+    <meta property="og:title" content="ShopManager — Do'kon, Kassa (POS) va Ombor hisobini avtomatlashtirish dasturi">
+    <meta property="og:description" content="Savdo, kassa va ombor hisobini bitta dasturda yuriting. Internetsiz ishlaydigan Windows POS tizimi — ShopManager.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shopmanager.uz/">
+    <meta property="og:image" content="https://shopmanager.uz/images/og-image.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ShopManager — do'kon, kassa va ombor hisobini avtomatlashtirish tizimi">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ShopManager — POS va Savdo nuqtalarini avtomatlashtirish dasturi">
+    <meta name="twitter:description" content="Do'kon, kassa va ombor hisobini avtomatlashtirish uchun qulay yechim — ShopManager.">
+    <meta name="twitter:image" content="https://shopmanager.uz/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="ShopManager — do'kon, kassa va ombor hisobini avtomatlashtirish tizimi">
+
+    <!-- Structured Data (Schema.org JSON-LD) for Search Engines & AI Agents -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://shopmanager.uz/#organization",
+          "name": "ShopManager",
+          "alternateName": "ShopManager.uz",
+          "url": "https://shopmanager.uz/",
+          "logo": "https://shopmanager.uz/images/logo.png",
+          "image": "https://shopmanager.uz/images/og-image.jpg",
+          "email": "swdev77@gmail.com",
+          "telephone": "+998977401551",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Islom Karimov ko'chasi, 16A",
+            "addressLocality": "Toshkent",
+            "addressCountry": "UZ"
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+998-97-740-1551",
+              "contactType": "sales and technical support",
+              "areaServed": "UZ",
+              "availableLanguage": ["uz", "ru"]
+            },
+            {
+              "@type": "ContactPoint",
+              "telephone": "+998-33-750-1551",
+              "contactType": "customer support",
+              "areaServed": "UZ",
+              "availableLanguage": ["uz", "ru"]
+            }
+          ],
+          "sameAs": [
+            "https://t.me/ZafarjonOlimov",
+            "https://github.com/swdev77/shopmanager-uz"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://shopmanager.uz/#website",
+          "url": "https://shopmanager.uz/",
+          "name": "ShopManager.uz",
+          "description": "Do'kon, kassa (POS) va ombor hisobini avtomatlashtirish uchun internetsiz ishlaydigan Windows dasturi",
+          "inLanguage": "uz",
+          "publisher": {
+            "@id": "https://shopmanager.uz/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://shopmanager.uz/#webpage",
+          "url": "https://shopmanager.uz/",
+          "name": "ShopManager — do'kon, kassa (POS) va ombor hisobi dasturi",
+          "inLanguage": "uz",
+          "isPartOf": { "@id": "https://shopmanager.uz/#website" },
+          "about": { "@id": "https://shopmanager.uz/#software" },
+          "mainEntity": { "@id": "https://shopmanager.uz/#software" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://shopmanager.uz/images/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "dateModified": "2026-10-29"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://shopmanager.uz/#software",
+          "name": "ShopManager POS",
+          "alternateName": ["ShopManager", "ShopManager kassa dasturi", "Программа для магазина ShopManager"],
+          "url": "https://shopmanager.uz/",
+          "image": "https://shopmanager.uz/images/og-image.jpg",
+          "screenshot": "https://shopmanager.uz/images/hero-supermarket-pos.webp",
+          "operatingSystem": "Windows 7, Windows 8, Windows 10, Windows 11",
+          "applicationCategory": "BusinessApplication",
+          "applicationSubCategory": "Point of Sale (POS) & Inventory Management Software",
+          "softwareVersion": "2.33.2025",
+          "fileSize": "99 MB",
+          "downloadUrl": "https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-full-Setup-2.33.2025.exe",
+          "releaseNotes": "Firebird 5.0 lokal ma'lumotlar bazasi, oflayn ishlash, tezkor kassa (Cashier) moduli, inventarizatsiya va CRM hisobotlari.",
+          "featureList": [
+            "Internetsiz (oflayn) ishlaydigan desktop dastur",
+            "Qulay sotuvlar va tezkor kassa (POS) interfeysi",
+            "Shtrix-kod skaneri, chek printeri, elektron tarozi va pul qutisi bilan ishlash",
+            "Real vaqt rejimida inventarizatsiya va ombor qoldiqlarini boshqarish",
+            "Savdo, foyda va mahsulotlar bo'yicha tahliliy hisobotlar",
+            "Mijozlarga sodiqlik (CRM), bonuslar va nasiya hisobi",
+            "Lokal tarmoqda bir nechta kassani yagona bazaga ulash"
+          ],
+          "requirements": "Windows 7/8/10/11, Intel Core i3 yoki AMD ekvivalenti, kamida 4 GB RAM, 300 MB bo'sh xotira",
+          "publisher": {
+            "@id": "https://shopmanager.uz/#organization"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UZS",
+            "description": "Sinov uchun bepul yuklab olish va o'rnatish",
+            "url": "https://shopmanager.uz/#download"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://shopmanager.uz/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ShopManager qanday dastur?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ShopManager — savdo nuqtalari, do'konlar, supermarketlar va omborxonalarda sotuvlarni tezlashtirish, ombor qoldiqlarini real vaqtda nazorat qilish hamda mijozlar bilan ishlash (CRM) uchun mo'ljallangan Windows dasturi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Dastur internetsiz ishlaydimi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ha. ShopManager kompyuterga o'rnatiladigan desktop dastur bo'lib, ma'lumotlar lokal Firebird 5.0 bazasida saqlanadi. Bir nechta kassani ulash uchun faqat lokal tarmoq yetarli."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kompyuterga qanday talablar qo'yiladi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Windows 7, 8, 10 yoki 11; Intel Core i3 (yoki AMD ekvivalenti) protsessor; kamida 4 GB tezkor xotira (8 GB tavsiya etiladi) va 300 MB bo'sh joy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qaysi paketni yuklab olishim kerak?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Asosiy kompyuterga (server va baza) — ShopManager Full, qo'shimcha ishchi kompyuterlarga — ShopManager Client, kassa terminaliga — Cashier Setup. Dastur allaqachon o'rnatilgan bo'lsa, Update paketlaridan foydalaning."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O'rnatishda yordam bera olasizmi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Albatta. +998 97 740 1551 raqamiga qo'ng'iroq qiling yoki Telegram (t.me/ZafarjonOlimov) orqali yozing."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Fonts: Optimistic VF fallbacks (Inter + Montserrat 300/400/500/700) + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&family=JetBrains+Mono:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
     <script src="js/constants.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <div data-include="sections/header.html"></div>
+    <div data-include="sections/header.html">
+        <!-- Navigation Header (DESIGN.md: Top Navigation Desktop ~64px, pill-tab nav, black primary CTA) -->
+        <header class="navbar" id="navbar">
+            <div class="container nav-container">
+                <a href="#" class="nav-brand" aria-label="ShopManager — bosh sahifa">
+                    <img src="images/logo.png" alt="ShopManager" class="nav-brand__logo" width="144" height="120">
+                    <span class="nav-brand__title">ShopManager</span>
+                </a>
 
-    <div data-include="sections/hero.html"></div>
+                <nav class="nav-menu" id="navMenu" aria-label="Asosiy menyu">
+                    <a href="#features">Imkoniyatlari</a>
+                    <a href="#hardware">Uskunalar</a>
+                    <a href="#download">Yuklab olish</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#footer">Aloqa</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <a href="ru/" class="lang-switch" hreflang="ru" lang="ru" title="Русская версия">RU</a>
+                    <a href="tel:+998977401551" class="nav-phone">
+                        <i class="fas fa-phone"></i> +998 97 740 1551
+                    </a>
+                    <a href="#download" class="btn btn-accent">
+                        Yuklab olish
+                    </a>
+                    <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="navMenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div><!-- /include -->
+
+    <main>
+    <div data-include="sections/hero.html">
+        <!-- Hero Section (DESIGN.md: Stark white canvas, 64px hero-display, 28px/300 subhead, dual-CTA, 32px photo frame) -->
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <span class="badge-promo">Yangi talqin • v2.33.2025</span>
+                    <h1 class="hero__title">ShopManager — POS tizimingiz uchun qulay yechim</h1>
+                    <p class="hero__subhead">Do'koningiz uchun ishonchli avtomatlashtirish.</p>
+                    <p class="hero__lead">ShopManager — internetga bog'liq bo'lmagan Windows dasturi. Savdoni tezlashtiring, ombor qoldiqlarini real vaqtda nazorat qiling va mijozlaringizni bonuslar bilan quvontiring.</p>
+                    <div class="hero__actions">
+                        <a href="#download" class="btn btn-accent">Bepul sinab ko'rish</a>
+                        <a href="#features" class="btn btn-secondary">Batafsil ma'lumot</a>
+                    </div>
+                    <ul class="hero__checks">
+                        <li><i class="fas fa-circle-check"></i> Internetsiz ishlaydi</li>
+                        <li><i class="fas fa-circle-check"></i> Windows 7 – 11</li>
+                        <li><i class="fas fa-circle-check"></i> Lokal tarmoqda ko'p kassa</li>
+                    </ul>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__frame">
+                        <img src="images/hero-supermarket-pos.webp" srcset="images/hero-supermarket-pos-640.webp 640w, images/hero-supermarket-pos.webp 1024w" sizes="(max-width: 600px) 92vw, 540px" alt="Do'kon, kassa va ombor hisobini avtomatlashtirish tizimi" width="1024" height="1024" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!-- /include -->
+
+    <!-- <div data-include="sections/metrics.html"></div> -->
 
     <!-- <div data-include="sections/trust.html"></div> -->
 
-    <div data-include="sections/features.html"></div>
+    <div data-include="sections/features.html">
+
+        <!-- Features Section: Pill-tab navigation & flat card-product-feature -->
+
+        <section class="section" id="features">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="eyebrow">Imkoniyatlari</span>
+
+                    <h2>Barcha jarayonlar bitta dasturda</h2>
+
+                    <p class="editorial-subhead">Kassadan omborgacha, hisobotlardan mijozlar bazasigacha.</p>
+
+                </div>
+
+
+                <div class="tabs" data-tabs>
+
+                    <div class="tabs__list" role="tablist" aria-label="Imkoniyatlari">
+
+                        <button class="tabs__tab is-active" type="button" role="tab" id="tab-sales" aria-controls="panel-sales" aria-selected="true">
+
+                            <i class="fas fa-cash-register"></i> Chakana savdo
+
+                        </button>
+
+                        <button class="tabs__tab" type="button" role="tab" id="tab-inventory" aria-controls="panel-inventory" aria-selected="false" tabindex="-1">
+
+                            <i class="fas fa-boxes-stacked"></i> Ombor nazorati
+
+                        </button>
+
+                        <button class="tabs__tab" type="button" role="tab" id="tab-analytics" aria-controls="panel-analytics" aria-selected="false" tabindex="-1">
+
+                            <i class="fas fa-chart-line"></i> Analitika
+
+                        </button>
+
+                        <button class="tabs__tab" type="button" role="tab" id="tab-crm" aria-controls="panel-crm" aria-selected="false" tabindex="-1">
+
+                            <i class="fas fa-users"></i> Mijozlar / CRM
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Panel: Chakana savdo -->
+
+                    <div class="tabs__panel is-active" role="tabpanel" id="panel-sales" aria-labelledby="tab-sales">
+
+                        <div class="tabs__text">
+
+                            <h3>Tezkor va qulay kassa</h3>
+
+                            <p>Intuitiv interfeys sotuvchiga bir necha soniyada chek yopish imkonini beradi — navbatlar qisqaradi, xatolar kamayadi.</p>
+
+                            <ul class="check-list">
+
+                                <li><i class="fas fa-circle-check"></i> Shtrix-kod skaneri orqali tovarni bir zumda qo'shish</li>
+
+                                <li><i class="fas fa-circle-check"></i> Chek printeri va tarozi bilan ishlash</li>
+
+                                <li><i class="fas fa-circle-check"></i> Naqd, karta va aralash to'lovlar</li>
+
+                                <li><i class="fas fa-circle-check"></i> Internet uzilganda ham savdo to'xtamaydi</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Panel: Ombor -->
+
+                    <div class="tabs__panel" role="tabpanel" id="panel-inventory" aria-labelledby="tab-inventory" hidden>
+
+                        <div class="tabs__text">
+
+                            <h3>Ombor qoldiqlari doim nazoratda</h3>
+
+                            <p>Har bir sotuv va kirim avtomatik hisobga olinadi. Qaysi tovar tugayotganini oldindan bilasiz va o'z vaqtida buyurtma berasiz.</p>
+
+                            <ul class="check-list">
+
+                                <li><i class="fas fa-circle-check"></i> Real vaqt rejimida qoldiqlar</li>
+
+                                <li><i class="fas fa-circle-check"></i> Kirim, chiqim, qaytarish va reviziya</li>
+
+                                <li><i class="fas fa-circle-check"></i> Kam qolgan tovarlar haqida ogohlantirish</li>
+
+                                <li><i class="fas fa-circle-check"></i> Yetkazib beruvchilarga buyurtmalar</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Panel: Analitika -->
+
+                    <div class="tabs__panel" role="tabpanel" id="panel-analytics" aria-labelledby="tab-analytics" hidden>
+
+                        <div class="tabs__text">
+
+                            <h3>Raqamlarga asoslangan qarorlar</h3>
+
+                            <p>Savdo, foyda va tovar aylanmasi bo'yicha tayyor hisobotlar biznesingiz qayerda o'sayotganini aniq ko'rsatadi.</p>
+
+                            <ul class="check-list">
+
+                                <li><i class="fas fa-circle-check"></i> Kunlik, haftalik va oylik tushum</li>
+
+                                <li><i class="fas fa-circle-check"></i> Sof foyda va eng ko'p sotilgan tovarlar</li>
+
+                                <li><i class="fas fa-circle-check"></i> Kassirlar faoliyati hisoboti</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Panel: CRM -->
+
+                    <div class="tabs__panel" role="tabpanel" id="panel-crm" aria-labelledby="tab-crm" hidden>
+
+                        <div class="tabs__text">
+
+                            <h3>Mijozlarni qaytib keladigan qiling</h3>
+
+                            <p>Bonus va chegirma tizimi, mijozlar bazasi va nasiya hisobi orqali sodiq mijozlar sonini oshiring.</p>
+
+                            <ul class="check-list">
+
+                                <li><i class="fas fa-circle-check"></i> Chegirma kartalari va bonus ballari</li>
+
+                                <li><i class="fas fa-circle-check"></i> Mijozlar xaridlari tarixi</li>
+
+                                <li><i class="fas fa-circle-check"></i> Nasiya va qarzdorlik hisobi</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div><!-- /include -->
+
+    <div data-include="sections/hardware.html">
+
+        <!-- Hardware Compatibility Section (DESIGN.md: why-buy-tile / card-icon-feature) -->
+
+        <section class="section section--soft" id="hardware">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="eyebrow">Uskunalar</span>
+
+                    <h2>Mavjud jihozlaringiz bilan ishlaydi</h2>
+
+                    <p class="editorial-subhead">Qo'shimcha qimmat uskunalar shart emas.</p>
+
+                </div>
+
+
+                <div class="hardware-grid">
+
+                    <div class="hw-card">
+
+                        <span class="hw-card__icon"><i class="fas fa-desktop"></i></span>
+
+                        <h3>Windows kompyuter</h3>
+
+                        <p>Windows 7, 8, 10 va 11. Monoblok, noutbuk yoki oddiy kompyuter — barchasi mos.</p>
+
+                    </div>
+
+                    <div class="hw-card">
+
+                        <span class="hw-card__icon"><i class="fas fa-barcode"></i></span>
+
+                        <h3>Shtrix-kod skaneri</h3>
+
+                        <p>Tovarlarni bir zumda kassaga qo'shish va omborda tez topish uchun.</p>
+
+                    </div>
+
+                    <div class="hw-card">
+
+                        <span class="hw-card__icon"><i class="fas fa-print"></i></span>
+
+                        <h3>Chek printeri</h3>
+
+                        <p>Har bir sotuvdan so'ng mijozga chekni avtomatik chop etish.</p>
+
+                    </div>
+
+                    <div class="hw-card">
+
+                        <span class="hw-card__icon"><i class="fas fa-scale-balanced"></i></span>
+
+                        <h3>Elektron tarozi</h3>
+
+                        <p>Vaznli tovarlarni (meva, go'sht, shirinliklar) aniq tortib sotish.</p>
+
+                    </div>
+
+                    <div class="hw-card">
+
+                        <span class="hw-card__icon"><i class="fas fa-cash-register"></i></span>
+
+                        <h3>Pul qutisi</h3>
+
+                        <p>Naqd to'lovda kassa qutisini avtomatik ochish.</p>
+
+                    </div>
+
+                    <div class="hw-card">
+
+                        <span class="hw-card__icon"><i class="fas fa-network-wired"></i></span>
+
+                        <h3>Lokal tarmoq</h3>
+
+                        <p>Bir nechta kassa va ishchi o'rinlarini yagona bazaga ulash — internetsiz.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div><!-- /include -->
 
     <!-- <div data-include="sections/testimonials.html"></div> -->
 
-    <div data-include="sections/download.html"></div>
+    <div data-include="sections/download.html">
+
+        <!-- Download Options Section (DESIGN.md: button-buy-cta cobalt #0064e0 + tech-specs-table) -->
+
+        <section class="section" id="download">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="eyebrow">Yuklab olish</span>
+
+                    <h2>ShopManager dasturini yuklab oling</h2>
+
+                    <p class="editorial-subhead">Kompyuteringiz vazifasiga mos paketni tanlang.</p>
+
+                </div>
+
+
+                <div class="download-grid">
+
+                    <div class="download-card download-card--featured">
+
+                        <span class="download-card__ribbon">Tavsiya etiladi</span>
+
+                        <span class="download-icon"><i class="fas fa-server"></i></span>
+
+                        <span class="download-card__tag">Asosiy kompyuter</span>
+
+                        <h3>ShopManager Full</h3>
+
+                        <p class="download-card__desc">Ma'lumotlar bazasi va Firebird 5.0 server bilan to'liq o'rnatish paketi.
+
+                        </p>
+
+                        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-full-Setup-2.33.2025.exe" data-download="FULL_SETUP" class="btn btn-primary btn-block">Yuklab olish</a>
+
+                        <p class="version-info" data-version="FULL_SETUP">2.33.2025 • 99 MB • Installer</p>
+
+                    </div>
+
+
+                    <div class="download-card">
+
+                        <span class="download-icon"><i class="fas fa-laptop"></i></span>
+
+                        <span class="download-card__tag">Ishchi o'rin</span>
+
+                        <h3>ShopManager Client</h3>
+
+                        <p class="download-card__desc">Lokal tarmoqdagi qo'shimcha kompyuterlar uchun (Firebird 5.0 client).</p>
+
+                        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-client-Setup-2.33.2025.exe" data-download="CLIENT_SETUP" class="btn btn-primary btn-block">Yuklab olish</a>
+
+                        <p class="version-info" data-version="CLIENT_SETUP">2.33.2025 • 59 MB • Installer</p>
+
+                    </div>
+
+
+                    <div class="download-card">
+
+                        <span class="download-icon"><i class="fas fa-cash-register"></i></span>
+
+                        <span class="download-card__tag">Savdo nuqtasi</span>
+
+                        <h3>Cashier Setup</h3>
+
+                        <p class="download-card__desc">Kassa (savdo nuqtasi) terminali uchun alohida dastur.</p>
+
+                        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/Cashier-Setup-2.33.2025.exe" data-download="CASHIER_SETUP" class="btn btn-primary btn-block">Yuklab olish</a>
+
+                        <p class="version-info" data-version="CASHIER_SETUP">2.33.2025 • 48 MB • Installer</p>
+
+                    </div>
+
+
+                    <div class="download-card">
+
+                        <span class="download-icon"><i class="fas fa-rotate"></i></span>
+
+                        <span class="download-card__tag">Yangilash</span>
+
+                        <h3>ShopManager Update</h3>
+
+                        <p class="download-card__desc">O'rnatilgan ShopManager dasturini yangi talqinga yangilash.</p>
+
+                        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/ShopManager-update-2.33.2025.exe" data-download="UPDATE_SETUP" class="btn btn-secondary btn-block">Yuklab olish</a>
+
+                        <p class="version-info" data-version="UPDATE_SETUP">2.33.2025 • 5 MB • Updater</p>
+
+                    </div>
+
+
+                    <div class="download-card">
+
+                        <span class="download-icon"><i class="fas fa-rotate"></i></span>
+
+                        <span class="download-card__tag">Yangilash</span>
+
+                        <h3>Cashier Update</h3>
+
+                        <p class="download-card__desc">O'rnatilgan kassa dasturini yangi talqinga yangilash.</p>
+
+                        <a href="https://github.com/swdev77/shopmanager-uz/releases/download/v2.33.2025/Cashier-update-2.33.2025.exe" data-download="CASHIER_UPDATE" class="btn btn-secondary btn-block">Yuklab olish</a>
+
+                        <p class="version-info" data-version="CASHIER_UPDATE">2.33.2025 • 6 MB • Updater</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- System Requirements (DESIGN.md: tech-specs-table two-column key/value table) -->
+
+                <div class="requirements">
+
+                    <h3 class="requirements__title">Texnik talablar</h3>
+
+                    <table class="requirements-table">
+
+                        <tbody>
+
+                            <tr>
+
+                                <th scope="row">Operatsion tizim (OS)</th>
+
+                                <td>Windows 7, Windows 8, Windows 10, Windows 11</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">Protsessor</th>
+
+                                <td>Minimal Intel Core i3 yoki AMD ekvivalenti</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">Tezkor xotira (RAM)</th>
+
+                                <td>Minimal 4 GB (8 GB tavsiya etiladi)</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">Doimiy xotira</th>
+
+                                <td>Kamida 300 MB bo'sh disk xotirasi</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th scope="row">Ma'lumotlar bazasi va tarmoq</th>
+
+                                <td>Firebird SQL 5.0 • Internetsiz (oflayn) va lokal tarmoqda ishlaydi</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div><!-- /include -->
+
+    <!-- Narxlar andozasi: haqiqiy narxlar kiritilgach faollashtiring -->
+    <!-- <div data-include="sections/pricing.html"></div> -->
+
+    <div data-include="sections/faq.html">
+
+        <!-- FAQ Section -->
+
+        <!-- Eslatma: savollar o'zgartirilsa, index.html dagi FAQPage JSON-LD ni ham yangilang. -->
+
+        <section class="section section--soft" id="faq">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="eyebrow">FAQ</span>
+
+                    <h2>Ko'p beriladigan savollar</h2>
+
+                    <p class="editorial-subhead">O'rnatish va ishlash bo'yicha asosiy ma'lumotlar.</p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <details class="faq-item" open>
+
+                        <summary>ShopManager qanday dastur?</summary>
+
+                        <div class="faq-item__body">
+
+                            <p>ShopManager — savdo nuqtalari, do'konlar, supermarketlar va omborxonalarda sotuvlarni tezlashtirish, ombor qoldiqlarini real vaqtda nazorat qilish hamda mijozlar bilan ishlash (CRM) uchun mo'ljallangan Windows dasturi.</p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>Dastur internetsiz ishlaydimi?</summary>
+
+                        <div class="faq-item__body">
+
+                            <p>Ha. ShopManager kompyuterga o'rnatiladigan desktop dastur bo'lib, ma'lumotlar lokal Firebird 5.0 bazasida saqlanadi. Bir nechta kassani ulash uchun faqat lokal tarmoq yetarli.</p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>Kompyuterga qanday talablar qo'yiladi?</summary>
+
+                        <div class="faq-item__body">
+
+                            <p>Windows 7, 8, 10 yoki 11; Intel Core i3 (yoki AMD ekvivalenti) protsessor; kamida 4 GB tezkor xotira (8 GB tavsiya etiladi) va 300 MB bo'sh joy.</p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>Qaysi paketni yuklab olishim kerak?</summary>
+
+                        <div class="faq-item__body">
+
+                            <p>Asosiy kompyuterga (server va baza) — <strong>ShopManager Full</strong>, qo'shimcha ishchi kompyuterlarga — <strong>ShopManager Client</strong>, kassa terminaliga — <strong>Cashier Setup</strong>. Dastur allaqachon o'rnatilgan bo'lsa, <strong>Update</strong> paketlaridan foydalaning. <a href="#download">Yuklab olish bo'limiga o'tish</a></p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>O'rnatishda yordam bera olasizmi?</summary>
+
+                        <div class="faq-item__body">
+
+                            <p>Albatta. <a href="tel:+998977401551">+998 97 740 1551</a> raqamiga qo'ng'iroq qiling yoki <a href="https://t.me/ZafarjonOlimov" target="_blank" rel="noopener noreferrer">Telegram</a> orqali yozing.</p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div><!-- /include -->
 
     <!-- <div data-include="sections/contact.html"></div> -->
-    
-    <div data-include="sections/cta.html"></div>
-    
-    <div data-include="sections/footer.html"></div>
+
+    <div data-include="sections/cta.html">
+
+        <!-- CTA Section (DESIGN.md: card-promo-strip — ink-deep #0a1317, 32px radius, 64px padding) -->
+
+        <section class="cta-section" id="cta">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <h2>Do'koningizni bugundan avtomatlashtiring</h2>
+
+                    <p>ShopManager'ni bepul yuklab oling va savdo, ombor hamda mijozlar hisobini bitta tizimda yuriting.</p>
+
+                    <div class="cta-box__actions">
+
+                        <a href="#download" class="btn btn-canvas">Bepul yuklab olish</a>
+
+                        <a href="tel:+998977401551" class="btn btn-ghost-light">Qo'ng'iroq qilish</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div><!-- /include -->
+    </main>
+
+    <div data-include="sections/footer.html">
+
+        <!-- Footer (DESIGN.md: footer-region — canvas white bg, hairline-soft border, steel text) -->
+
+        <footer class="footer" id="footer">
+
+            <div class="container">
+
+                <div class="footer-content">
+
+                    <div class="footer-brand">
+
+                        <a href="#" class="footer-brand__logo">
+
+                            <img src="images/logo.png" alt="ShopManager" width="144" height="120" loading="lazy">
+
+                            <span class="nav-brand__title">ShopManager</span>
+
+                        </a>
+
+                        <p>Do'kon, kassa va ombor hisobini avtomatlashtirish uchun qulay yechim.</p>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>Mahsulot</h3>
+
+                        <ul>
+
+                            <li><a href="#features">Imkoniyatlari</a></li>
+
+                            <li><a href="#hardware">Uskunalar</a></li>
+
+                            <li><a href="#download">Yuklab olish</a></li>
+
+                            <li><a href="#faq">FAQ</a></li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>Manzil</h3>
+
+                        <ul>
+
+                            <li><i class="fas fa-location-dot"></i> Islom Karimov ko'chasi, 16A</li>
+
+                            <li>Toshkent sh., O'zbekiston</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h3>Aloqa</h3>
+
+                        <ul>
+
+                            <li><i class="fas fa-phone"></i> <a href="tel:+998977401551">+998 97 740 1551</a></li>
+
+                            <li><i class="fas fa-phone"></i> <a href="tel:+998337501551">+998 33 750 1551</a></li>
+
+                            <li><i class="fa-brands fa-telegram"></i> <a href="https://t.me/ZafarjonOlimov" target="_blank" rel="noopener noreferrer">Telegram (@ZafarjonOlimov)</a></li>
+
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:swdev77@gmail.com">swdev77@gmail.com</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                    <p>&copy; 2025 ShopManager. Barcha huquqlar himoyalangan.</p>
+
+                    <p>Talqin: v2.33.2025 • O'zbekiston (UZ) • <a href="ru/" hreflang="ru" lang="ru">Русский</a></p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div><!-- /include -->
 
 </body>
 </html>
