@@ -4,6 +4,7 @@
 
 ## Asosiy ma'lumotlar (Overview)
 - **Mahsulot nomi:** ShopManager
+- **Shior:** ShopManager — do'koningizni avtomatlashtirish uchun qulay yechim / ShopManager — удобное решение для автоматизации вашего магазина
 - **Rasmiy veb-sayt:** https://shopmanager.uz (o'zbekcha), https://shopmanager.uz/ru/ (на русском)
 - **Joriy talqin (Version):** 2.33.2025
 - **Dastur turi:** Windows Desktop ilova (internetsiz / offline va lokal tarmoqda barqaror ishlaydi)

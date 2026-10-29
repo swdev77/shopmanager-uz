@@ -564,6 +564,12 @@ footer[id] {
     gap: var(--space-md);
 }
 
+/* Match .nav-phone / .lang-switch height (40px) */
+.nav-actions .btn {
+    padding: 10px 22px;
+    min-height: 40px;
+}
+
 .nav-phone {
     display: inline-flex;
     align-items: center;
