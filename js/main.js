@@ -34,6 +34,7 @@
  */
 document.addEventListener('includesLoaded', function() {
     initStickyHeader();
+    initThemeToggle();
     initMobileMenu();
     initTabs();
     initBillingToggle();
@@ -46,6 +47,25 @@ function initStickyHeader() {
     const update = () => navbar.classList.toggle('is-scrolled', window.scrollY > 8);
     update();
     window.addEventListener('scroll', update, { passive: true });
+}
+
+// Light / dark theme: follows the OS until the visitor picks one (saved in localStorage)
+function initThemeToggle() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const root = document.documentElement;
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const current = () => root.getAttribute('data-theme') || (systemDark.matches ? 'dark' : 'light');
+    const sync = () => btn.setAttribute('aria-pressed', String(current() === 'dark'));
+
+    btn.addEventListener('click', () => {
+        const next = current() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        sync();
+    });
+    systemDark.addEventListener('change', sync);
+    sync();
 }
 
 // Mobile navigation toggle

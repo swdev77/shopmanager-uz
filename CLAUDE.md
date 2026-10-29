@@ -38,6 +38,7 @@ FAQ matni o'zgarsa, `index.html` dagi JSON-LD `FAQPage` ni ham yangilang.
 - Fayl yo'llari doim nisbiy (`images/...`, `css/...`, `sections/...`); `/css/...` kabi ildiz yo'llar ishlatilmasin.
 - Dizayn: tugma/tab/badge'lar pill (`--rounded-full`), kartochkalar yassi (`1px solid var(--hairline-soft)`, og'ir soyasiz); ranglarni yangi hex bilan emas, `:root` tokenlari orqali bering (batafsil `AGENTS.md` §4).
 - Ikonkalar FontAwesome 6.5.1 CDN orqali (`index.html` `<head>`).
+- **Kunduzgi/tungi rejim:** tungi palitra `css/style.css` da `:root[data-theme="dark"]` va `@media (prefers-color-scheme: dark)` bloklarida (ikkalasi bir xil, birini o'zgartirsangiz ikkinchisini ham). `--canvas`/`--ink-*` rejimga qarab almashadi, shuning uchun rangli fon ustidagi matn uchun `--on-fill`, to'q ko'k fon uchun `--fill-strong` ishlating (`color: var(--canvas)` yozmang). Tanlov `localStorage.theme` da saqlanadi; `<head>` dagi inline skript uni birinchi chizishdan oldin qo'llaydi, `initThemeToggle()` (`main.js`) tugmani boshqaradi.
 
 <!-- imported-from: gemini:project:instructions -->
 # GEMINI.md — AI Workspace Instructions (`shopmanager-uz`)

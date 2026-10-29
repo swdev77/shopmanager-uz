@@ -8,7 +8,9 @@
     <meta name="keywords" content="ShopManager, POS tizimi, do'kon dasturi, savdo dasturi, kassa dasturi, ombor dasturi, inventarizatsiya dasturi, savdo nuqtasini avtomatlashtirish, magazin programma, kassa apparat dasturi, oflayn kassa dasturi, CRM, chakana savdo, Toshkent, O'zbekiston, программа для магазина, автоматизация торговли Ташкент, POS система Узбекистан, складской учет">
     <meta name="author" content="ShopManager">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="theme-color" content="#0c4e8c">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1622" media="(prefers-color-scheme: dark)">
     <meta name="google-site-verification" content="HV25fBln7H0_DyDvM9W_MbUF0QjoTv3aJFdfmHGz9YI">
     <meta name="msvalidate.01" content="3B9152ED1E59E34CB597D12130DF4A41">
     <link rel="canonical" href="https://shopmanager.uz/">
@@ -199,6 +201,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&family=JetBrains+Mono:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Apply saved theme before first paint to avoid a flash -->
+    <script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
     <script src="js/constants.js" defer></script>
@@ -210,7 +214,7 @@
         <header class="navbar" id="navbar">
             <div class="container nav-container">
                 <a href="#" class="nav-brand" aria-label="ShopManager — bosh sahifa">
-                    <img src="images/logo.png" alt="ShopManager" class="nav-brand__logo" width="144" height="120">
+                    <img src="images/logo-transparent.png" alt="ShopManager" class="nav-brand__logo" width="144" height="120">
                     <span class="nav-brand__title">ShopManager</span>
                 </a>
 
@@ -224,6 +228,9 @@
 
                 <div class="nav-actions">
                     <a href="ru/" class="lang-switch" hreflang="ru" lang="ru" title="Русская версия">RU</a>
+                    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Kunduzgi / tungi rejim" title="Kunduzgi / tungi rejim">
+                        <i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i>
+                    </button>
                     <a href="tel:+998977401551" class="nav-phone">
                         <i class="fas fa-phone"></i> +998 97 740 1551
                     </a>
@@ -838,7 +845,7 @@
 
                         <a href="#" class="footer-brand__logo">
 
-                            <img src="images/logo.png" alt="ShopManager" width="144" height="120" loading="lazy">
+                            <img src="images/logo-transparent.png" alt="ShopManager" width="144" height="120" loading="lazy">
 
                             <span class="nav-brand__title">ShopManager</span>
 
