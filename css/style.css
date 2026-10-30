@@ -45,6 +45,8 @@
     --on-fill-muted: #e1edf7;
     --logo-filter: none;
     --brand-gradient: linear-gradient(100deg, #0c4e8c 0%, #0c81e4 30%, #5b21b6 60%, #009e2f 85%, #0c81e4 100%);
+    /* To'q ko'k (--fill-strong) fon ustidagi gradient — ikkala rejimda bir xil */
+    --brand-gradient-on-fill: linear-gradient(100deg, #6cb8f6 0%, #3d9cf0 30%, #c4b5fd 60%, #4ade80 85%, #6cb8f6 100%);
     color-scheme: light;
 
     /* Typography */
@@ -1039,6 +1041,12 @@ footer[id] {
     margin-bottom: var(--space-xs);
 }
 
+/* Mahsulot nomi alohida qatorda, paket turi (Full, Setup…) uning ostida */
+.download-card h3 .brand-text {
+    display: block;
+    width: fit-content;
+}
+
 .download-card__desc {
     flex: 1;
     font-size: 14px;
@@ -1200,6 +1208,10 @@ footer[id] {
     font-weight: 400;
     line-height: 1.44;
     color: var(--on-fill-muted);
+}
+
+.cta-box .brand-text {
+    background-image: var(--brand-gradient-on-fill);
 }
 
 .cta-box__actions {
