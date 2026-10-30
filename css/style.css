@@ -1171,6 +1171,12 @@ footer[id] {
     color: var(--charcoal);
 }
 
+/* FAQ dagi ShopManager / Cashier nomlari — gradientsiz, brend rangida qalin */
+.brand-mark {
+    font-weight: 700;
+    color: var(--primary);
+}
+
 .faq-item__body a {
     color: var(--primary);
     font-weight: 700;
